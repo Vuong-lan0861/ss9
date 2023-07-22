@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let soThuNhat = parseInt(prompt("Nhap vao so thu nhat:"));
+        let soThuHai = parseInt(prompt("Nhap vao so thu hai:"));
+        let soThuBA = parseInt(prompt("Nhap vao so thu ba:"));
+
+        let max = soThuNhat > soThuHai ? (soThuNhat > soThuBA ? soThuNhat : soThuBA) :
+            (soThuHai > soThuBA ? soThuHai : soThuBA);
+        let min = soThuNhat < soThuHai ? (soThuNhat < soThuBA ? soThuNhat : soThuBA) :
+            (soThuHai < soThuBA ? soThuHai : soThuBA);
+
+        document.write("So lon nhat la:" + max + "<br>");
+        document.write("So nho nhat la:" + min + "<br>");
+    </script>
+</body>
+
+</html>
