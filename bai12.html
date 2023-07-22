@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let soCo3ChuSo = Number(prompt("Nhap vao so co ba chu so: "));
+        let hangTram = Math.floor(soCo3ChuSo / 100);
+        let hangChuc = Math.floor((soCo3ChuSo % 100) / 10);
+        let hangDonVi = soCo3ChuSo % 10;
+
+        document.write("So goc la:" + soCo3ChuSo + "<br>");
+        document.write("so dao nguoc la:" + hangDonVi + hangChuc + hangTram);
+    </script>
+</body>
+
+</html>
